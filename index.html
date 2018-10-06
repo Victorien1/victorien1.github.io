@@ -1,44 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW-Wireframe</title>
-
-    <link rel="stylesheet" href="HW-Wireframe/style.css"/>
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap-Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
 </head>
-
 <body>
 
-    <div class="content">
-                <header>header</header>
-    
-    <div class="nav">nav</div>
-    
-    <section id="main_content"> section<article>
+<!-- Navigation bar goes here-->
 
-                    article
+<nav class ="navbar navbar-expand-md navbar-light bg-light stiky-top"
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="images/icon.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    
+    </button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">portfolio</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
 
-<div class="container"> h1, h2, h3</div> in
+    </ul>
+</div>
+</div>
+</nav>
+
+<!--- Image Slider -->
+
+<div id="slides" class="carousel" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+    </ul>
+    <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img src="images/responsive website-3374825_1920.jpg">
+                    <div class="carousel-caption">
+                        
+                    </div>
+    </div>
+    
+    <div class="carousel-inner">
+            <div class="carousel-item active">
+                    <img src="images/bootstrap2.png">
+    </div>
+    </div>
+</div>
+
+<!--- Jumbotron -->
+
+<div class="container-fluid">
+    <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+            <p class="lead">Using Bootstrap, recreate your portfolio site with the following items:
+                 A navbar
                     
-                        <p>p</p>
+                A responsive layout 
+                    
+                Responsive images. 
+                    </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="https://columbia.bootcampcontent.com/columbia-bootcamp/COLNYC201809FSF2/blob/master/01_homework/week_02/homework-instructions.md" class="btn btn-primary">the complete assignment</a>
+        </div>
+    </div>
+</div>
+<!--- Welcome Section -->
 
-    </article>
+<div class="container-fluid padding">
+    <div class="row Welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Build with Bootstrap</h1>
+        </div>
+<br>
+<div class="col-12">
+    <p class="lead">Welcome to my portfolio page build using Bootstrap, html5, css, </p>
+</div>
+    </div>
+    <hr class="my-4"> 
+</div>
+
+<!--- Three Column Section -->
+
+<div class="container-fluid padding">
+<div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+            <h3>HTML5</h3>
+            <p>What is html5?</p>
+    </div>
+    <div class="col-sm-12 col-md-4">
+            <i class="fas fa-css"></i>
+            <h3>CSS</h3>
+            <p>What is CSS?</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>Bootstrap</h3>
+            <p>What is Bootstrap?</p>
+    </div>
+
+</div>
+<hr>
+<!--- Two Column Section -->
+
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-12 col-lg-6">
+            <h2>Bootstrap? cool stuff for developers!</h2>
+            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. <br> prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p> <br>
+            <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/desk.png">
+        </div>
+    </div>
+</div>
+
+<br class="my-4">
+<!--- Fixed background -->
+
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed"></div>
+    </div>
+</figure>
+
+<!--- Sample Design -->
+<div class="container-fluid padding">
+    <div class="row welcome tex-center">
+        <div class="col-12">
+            <h1 class="display-4">We Are Experts In:</h1>
+        </div>
+        <hr>
+    </div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="images/html5-course-267x300.png">
+                <div class="card-body">
+                    <h4 class="card-title">HTML5</h4>
+                    <p class="card-tex">What's new features in HTML5? </p>
+                    <a href="#" class="btn btn-outline-secondary">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/logo css3-2582747__340.png">
+                    <div class="card-body">
+                        <h4 class="card-title">CSS3</h4>
+                        <p class="card-tex">What's new in CSS3? </p>
+                        <a href="#" class="btn btn-outline-secondary">Learn more</a>
+                    </div>
+    </div>
+</div>
+<div class="col-md-4">
+        <div class="card">
+            <img class="card-img-top" src="images/bootstrap-stack.png">
+            <div class="card-body">
+                <h4 class="card-title">Bootstrap</h4>
+                <p class="card-tex">What is Bootstrap? Discover the latest version,</p>
+                <a href="#" class="btn btn-outline-secondary">Learn more</a>
+            
+    
+            </div>
+            
+<!--- Connect -->
+
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect with us!</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+<!--- Footer -->
+<footer>
+    <div class="container-fluid padding">
+     <div class="row text-center">
+            <div class="col-md-4">
+                <img src="images/icon.png">
+                <hr class="light">
+                <p>800-347-9922</p>
+                <p>victorien@portfoli.com</p>
+                <p>388 greenwin street</p>
+                <p>10033, Nyc, NY</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Hours</h5>
+                <hr class="light">
+                <p>Monday-Friday: 7am-6pm</p>
+                <p>Saturday: 9am-4pm</p>
+            </div>
+            <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Our offices</h5>
+                    <hr class="light">
+                    <p>Chicago</p>
+                    <p>328 Varick street</p>
+                <p>10033, chicago,Il</p>
+                <p>399 winners street</p>
+                <p>10033, San-Fransisco, CA</p>
+                <p>388 Champions street</p>
+                <p>10033, Seattle, Wc</p>
+            </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5>&copy; VictorienPortfolio.com</h5>
+            </div>
+
+</div>
+ </div>
+
+</footer>
 
 
-    </section>
-            
-        
-                       
-    <aside>aside</aside>
-                                              
-            
-    <footer>footer</footer>
-                  
-            
 </body>
-
 </html>

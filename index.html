@@ -6,8 +6,6 @@
 	<title>Bootstrap-Portfolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 </head>
@@ -22,6 +20,7 @@
         <span class="navbar-toggler-icon"></span>
     
     </button>
+
 <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -39,26 +38,10 @@
 </div>
 </nav>
 
-<!--- Image Slider -->
-
-<div id="slides" class="carousel" data-ride="carousel">
-    <ul class="carousel-indicators">
-        <li data-target="#slides" data-slide-to="0" class="active"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-    </ul>
-    <div class="carousel-inner">
-            <div class="carousel-item active">
-                    <img src="images/responsive website-3374825_1920.jpg">
-                    <div class="carousel-caption">
-                        
-                    </div>
-    </div>
-    
-    <div class="carousel-inner">
-            <div class="carousel-item active">
+<!---Homepage header Image -->
+<div class="container">
+ <div class="image">
                     <img src="images/bootstrap2.png">
-    </div>
-    </div>
 </div>
 
 <!--- Jumbotron -->
@@ -66,13 +49,10 @@
 <div class="container-fluid">
     <div class="row jumbotron">
         <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-            <p class="lead">Using Bootstrap, recreate your portfolio site with the following items:
-                 A navbar
-                    
-                A responsive layout 
-                    
-                Responsive images. 
-                    </p>
+            <p class="lead">Using Bootstrap, recreate your portfolio site with the following items:</p>
+                <p> A navbar</p>
+                <p> A responsive layout </p>
+                <p>Responsive images.  </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
             <a href="https://columbia.bootcampcontent.com/columbia-bootcamp/COLNYC201809FSF2/blob/master/01_homework/week_02/homework-instructions.md" class="btn btn-primary">the complete assignment</a>
@@ -86,13 +66,13 @@
         <div class="col-12">
             <h1 class="display-4">Build with Bootstrap</h1>
         </div>
-<br>
-<div class="col-12">
-    <p class="lead">Welcome to my portfolio page build using Bootstrap, html5, css, </p>
-</div>
+        <br>
+        <div class="col-12">
+
+            <p class="lead">Welcome to my portfolio page build using Bootstrap, html5, css, </p>
+        </div>
     </div>
-    <hr class="my-4"> 
-</div>
+    </div>
 
 <!--- Three Column Section -->
 
@@ -104,8 +84,8 @@
             <p>What is html5?</p>
     </div>
     <div class="col-sm-12 col-md-4">
-            <i class="fas fa-css"></i>
-            <h3>CSS</h3>
+            <i class="fab fa-css3  aria-hidden="true></i>
+            <h3>CSS3</h3>
             <p>What is CSS?</p>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-4">
@@ -113,15 +93,16 @@
             <h3>Bootstrap</h3>
             <p>What is Bootstrap?</p>
     </div>
-
 </div>
-<hr>
+<hr class="my-4">
+</div>
 <!--- Two Column Section -->
-
+<div class="container">
 <div class="container-fluid padding">
     <div class="row padding">
         <div class="col-md-12 col-lg-6">
             <h2>Bootstrap? cool stuff for developers!</h2>
+            <p>Build responsive, mobile-first projects on the web with the world's most popular front-end component library.</p>
             <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. <br> prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p> <br>
             <a href="#" class="btn btn-primary">Learn more</a>
         </div>
@@ -129,18 +110,12 @@
             <img src="images/desk.png">
         </div>
     </div>
+    <br class="my-4">
 </div>
 
-<br class="my-4">
-<!--- Fixed background -->
-
-<figure>
-    <div class="fixed-wrap">
-        <div id="fixed"></div>
-    </div>
-</figure>
 
 <!--- Sample Design -->
+<div class="container"
 <div class="container-fluid padding">
     <div class="row welcome tex-center">
         <div class="col-12">
@@ -169,7 +144,10 @@
                     <img class="card-img-top" src="images/logo css3-2582747__340.png">
                     <div class="card-body">
                         <h4 class="card-title">CSS3</h4>
-                        <p class="card-tex">What's new in CSS3? </p>
+                        <p class="card-tex">What's new in CSS3? •	CSS stands for Cascading Style Sheets
+                                •	CSS describes how HTML elements are to be displayed on screen, paper...
+
+                                </p>
                         <a href="#" class="btn btn-outline-secondary">Learn more</a>
                     </div>
     </div>
@@ -179,28 +157,15 @@
             <img class="card-img-top" src="images/bootstrap-stack.png">
             <div class="card-body">
                 <h4 class="card-title">Bootstrap</h4>
-                <p class="card-tex">What is Bootstrap? Discover the latest version,</p>
+                <p class="card-tex">What is Bootstrap? Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
+                    Build responsive, mobile-first projects on the web with the world's most popular front-end component library.Discover the latest version,</p>
                 <a href="#" class="btn btn-outline-secondary">Learn more</a>
             
     
             </div>
-            
-<!--- Connect -->
+         </div>
+</div>   
 
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-12">
-            <h2>Connect with us!</h2>
-        </div>
-        <div class="col-12 social padding">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
-</div>
 <!--- Footer -->
 <footer>
     <div class="container-fluid padding">
@@ -214,14 +179,16 @@
                 <p>10033, Nyc, NY</p>
             </div>
             <div class="col-md-4">
-                <hr class="light">
+                <br>
+                <br>
                 <h5>Hours</h5>
                 <hr class="light">
                 <p>Monday-Friday: 7am-6pm</p>
                 <p>Saturday: 9am-4pm</p>
             </div>
             <div class="col-md-4">
-                    <hr class="light">
+                    <br>
+                    <br>
                     <h5>Our offices</h5>
                     <hr class="light">
                     <p>Chicago</p>
@@ -232,6 +199,20 @@
                 <p>388 Champions street</p>
                 <p>10033, Seattle, Wc</p>
             </div>
+            <div class="container-fluid padding">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <h2>Connect with us!</h2>
+                        </div>
+                        <div class="col-12 social padding">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
             <div class="col-12">
                 <hr class="light">
                 <h5>&copy; VictorienPortfolio.com</h5>
